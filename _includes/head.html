@@ -8,12 +8,14 @@
   {% if page.tags %}
   <meta name="keywords" content="{{ page.tags | post.tags | join: ', ' }}">
   {% endif %}
-
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}" />
+  {% endif %}
   <!-- Robot Directives -->
   <meta name="robots" content="noindex, nofollow">
-  <!-- {% if paginator.page > 1 and paginator %}
+  {% if paginator.page > 1 and paginator %}
   <meta name="robots" content="noindex, follow">
-  {% endif %} -->
+  {% endif %}
   <!-- Robot Directives end -->
 
   <!-- Pagination -->
