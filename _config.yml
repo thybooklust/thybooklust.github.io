@@ -17,7 +17,7 @@ book_preview: 1
 
 # Build settings
 environment: development
-google_analytics: UA-111576317-1
+google_analytics: "UA-111576317-1"
 markdown: kramdown
 theme: minima
 plugins:
