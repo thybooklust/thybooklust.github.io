@@ -51,6 +51,7 @@
       country = getCookie('country');
     } else {
       getIpData(function(data) {
+        requestIpData = true;
         country = data.country;
       });
     }
@@ -85,4 +86,9 @@
   $("#cancel-button").click(function() {
     $("#target-content").hide();
   });
+  
+  //request before click, for ip info
+  getCountry(function(data) {
+    return;
+  })
 })();
