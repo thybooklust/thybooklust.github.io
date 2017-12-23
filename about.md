@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Thybooklust
+title: About
 site_nav_visibility: false
 permalink: /about
 main_only_short_description: "what we do, how we roll"
