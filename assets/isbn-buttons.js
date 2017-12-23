@@ -41,7 +41,7 @@
     }
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = ipCallBack;
-    httpRequest.open('GET', 'http://ip-api.com/json', true);
+    httpRequest.open('GET', 'https://ip-api.com/json', true);
     httpRequest.send();
   }
 
