@@ -41,7 +41,7 @@
     }
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = ipCallBack;
-    httpRequest.open('GET', 'https://ip-api.com/json', true);
+    httpRequest.open('GET', 'https://ipinfo.io/json', true);
     httpRequest.send();
   }
 
@@ -51,14 +51,12 @@
       country = getCookie('country');
     } else {
       getIpData(function(data) {
-        country = data.countryCode;
+        country = data.country;
         console.log(data);
       });
     }
     if (!amazonGeoData.hasOwnProperty(country)) {
-      console.log(country);
       country = "GLOBAL";
-      console.log('got globy');
     }
     callback(country);
   }
