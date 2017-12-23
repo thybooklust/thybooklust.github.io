@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "10 Most Popular Programming Books Ever"
-author: "Ryan Wilderson"
+author: "Ryan Wilderbeast"
 date: 2017-12-17 10:11:30 +0530
 image: "/assets/posts/code-1839406_640.jpg"
 description: >-
