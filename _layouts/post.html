@@ -6,17 +6,18 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished dateModified">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
       {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        • <span itemprop="author publisher" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}</p>
   </header>
   {% if page.image %}
-  <div itemprop="image thumbnailUrl" class="post-image post-content">
-    <img src="{{ page.image }}" alt="Preview Image" />
+  <div itemprop="image"itemscope itemtype="https://schema.org/ImageObject" class="post-image post-content">
+    <img itemprop="image" src="{{ page.image | absolute_url }}" alt="{{ post.title }}" />
+    <meta itemprop="url" content="{{ page.image | absolute_url}}">"
   </div>
   {% endif %}
   <div itemprop="description" class="post-content post-description">
