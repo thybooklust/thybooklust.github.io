@@ -34,7 +34,7 @@
       if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
           response = JSON.parse(httpRequest.responseText);
-          setCountryCookie(response.countryCode, 2);
+          setCountryCookie(response.country, 2);
           callback(response);
         }
       }
@@ -52,7 +52,6 @@
     } else {
       getIpData(function(data) {
         country = data.country;
-        console.log(data);
       });
     }
     if (!amazonGeoData.hasOwnProperty(country)) {
