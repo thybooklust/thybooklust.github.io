@@ -52,10 +52,12 @@
     } else {
       getIpData(function(data) {
         country = data.countryCode;
+        console.log(data);
       });
     }
     if (!amazonGeoData.hasOwnProperty(country)) {
       country = "GLOBAL";
+      console.log('got globy');
     }
     callback(country);
   }
