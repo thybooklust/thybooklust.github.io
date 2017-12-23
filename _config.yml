@@ -2,7 +2,7 @@ title: "THYBOOKLUST"
 email: "thybooklust@outlook.com"
 description: >-
   Book lists are awesome, it's a great way to find amazing books, we recommend selected books from all over the internet, let's enjoy best must read book lists.
-baseurl: 
+baseurl:
 permalink: "/:title.html"
 url:
 twitter_username: thybooklust
@@ -17,6 +17,7 @@ book_preview: 1
 
 # Build settings
 environment: development
+google_analytics: UA-111576317-1
 markdown: kramdown
 theme: minima
 plugins:
