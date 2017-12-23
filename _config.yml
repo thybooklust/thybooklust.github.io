@@ -1,0 +1,24 @@
+title: "THYBOOKLUST"
+email: "thybooklust@outlook.com"
+description: >-
+  Book lists are awesome, it's a great way to find amazing books, we recommend selected books from all over the internet, let's enjoy best must read book lists.
+baseurl: ""
+permalink: "/:title.html"
+url: ""
+twitter_username: thybooklust
+github_username:  thybooklust
+facebook_username: thybooklust
+reddit_username: thybooklust
+
+# site specific
+paginate: 15
+paginate_path: "/page-:num"
+book_preview: 1
+
+# Build settings
+environment: development
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

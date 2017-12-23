@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}</p>
+  </header>
+  {% if page.image %}
+  <div itemprop="image thumbnailUrl" class="post-image post-content">
+    <img src="{{ page.image }}" alt="Preview Image" />
+  </div>
+  {% endif %}
+  <div itemprop="description" class="post-content post-description">
+    <p>
+    {{ page.description }}
+  </p>
+  </div>
+  <div class="post-content post-list" itemprop="articleBody">
+    {{ content }}
+  </div>
+  {% if page.tags %}
+  <footer class="post-footer">
+    <p itemprop="keywords" class="post-meta post-keywords">
+      {{ page.tags | join: ', '}}
+    </p>
+  </footer>
+  {% endif %}
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
+<div id="target-content">
+  <div id="target-inner" class="button-container">
+    <a href="#" id="amazon-link" target="_blank">
+      <div class="button-default button-amazon">
+        Buy On Amazon
+      </div>
+    </a>
+    <a href="#" id="goodreads-link" target="_blank">
+      <div class="button-default button-goodreads">
+        Goodreads
+      </div>
+    </a>
+      <div class="button-default button-cancel" id="cancel-button">
+        Cancel
+      </div>
+    </div>
+    </div>
