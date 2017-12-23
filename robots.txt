@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /404
+User-agent: *
+Disallow: *thybooklust.github.io*
