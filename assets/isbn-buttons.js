@@ -56,6 +56,7 @@
       });
     }
     if (!amazonGeoData.hasOwnProperty(country)) {
+      console.log(country);
       country = "GLOBAL";
       console.log('got globy');
     }
