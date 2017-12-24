@@ -31,7 +31,7 @@ layout: default
   {% if page.tags %}
   <footer class="post-footer">
     <p itemprop="keywords" class="post-meta post-keywords">
-      {{ page.tags | join: ', '}}
+      {{ page.categories | join: ', '}}
     </p>
   </footer>
   {% endif %}
