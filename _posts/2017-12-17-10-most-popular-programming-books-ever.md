@@ -7,7 +7,7 @@ image: "/assets/posts/code-1839406_640.jpg"
 description: >-
   there are thousands and thousands of books on programming and computer science in general, here are 10 most popular books ever that have been recommended gazillion times on the internet.
 categories: ["computer science"]
-tags: ["programming", most recommended]
+tags: [programming, computer engineering books list, computer books list, computer science books list, best computer books list]
 ---
 * **[Working Effectively with Legacy Code](#ISBN0131177052)** by Michael C. Feathers
 
