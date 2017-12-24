@@ -30,4 +30,18 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "{{ site.title }}",
+    "url" : "{{ site.url }}",
+    "sameAs" : [
+      "https://www.facebook.com/{{ site.facebook_username }}",
+      "https://twitter.com/{{ site.twitter_username }}",
+      "https://reddit.com/r/{{ site.reddit_username }}"
+    ]
+  }
+</script>
 </head>
