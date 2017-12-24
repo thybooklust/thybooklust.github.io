@@ -12,7 +12,7 @@
   {% if page.tags %}
   <meta name="keywords" content="{{ page.tags | post.tags | join: ', ' }}">
   {% endif %}
-  <meta property="og:image" content="{{ page.image | "/assets/images/logo.jpg" | absolute_url }}" />
+  <meta property="og:image" content="{{ page.image | absolute_url }}" />
   {% if paginator.page > 1 and paginator %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
