@@ -12,20 +12,16 @@
   {% if page.image %}
   <meta property="og:image" content="{{ page.image | absolute_url }}" />
   {% endif %}
-  <!-- Robot Directives -->
   {% if paginator.page > 1 and paginator %}
   <meta name="robots" content="noindex, follow">
   {% endif %}
-  <!-- Robot Directives end -->
-
-  <!-- Pagination -->
   {% if paginator.prev_page_path %}
   <link rel="prev" href="{{ paginator.prev_page_path | absolute_url }}">
   {% endif %}
   {% if paginator.next_page_path %}
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
   {% endif %}
-  <!-- Pagination end -->
+  <link rel="sitemap" href="{{ "/sitemap.xml" | relative_url }}" />
   <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
