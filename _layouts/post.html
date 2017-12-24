@@ -17,7 +17,7 @@ layout: default
   {% if page.image %}
   <div itemprop="image"itemscope itemtype="https://schema.org/ImageObject" class="post-image post-content">
     <img itemprop="image" src="{{ page.image }}" alt="{{ post.title }}" />
-    <meta itemprop="url" content="{{ page.image | prepend: baseurl }}">"
+    <meta itemprop="url" content="{{ page.image | prepend: baseurl }}">
   </div>
   {% endif %}
   <div itemprop="description" class="post-content post-description">
