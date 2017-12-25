@@ -2,7 +2,8 @@
 layout: post
 title: "10 Most Popular Programming Books Ever"
 author: "Ryan Wilderbeast"
-date: 2017-12-18 10:11:30 +0530
+date: 2017-12-17 10:11:30 +0530
+date_modified: 2017-12-25 17:48:55 +0530
 image: "/assets/posts/code-1839406_640.jpg"
 description: >-
   there are thousands and thousands of books on programming and computer science in general, here are 10 most popular books ever that have been recommended gazillion times on the internet.
@@ -18,7 +19,7 @@ tags: [programming, computer engineering books list, computer books list, comput
 
 * **[Clean Code](#ISBN0132350882)** by Robert C. Martin
 
-  How to tell the difference between good and bad code How to write good code and how to transform bad code into good code How to create good names, good functions, good objects, and good classes How to format code for maximum readability How to implement complete error handling without obscuring code logic How to unit test and practice test-driven development This book is a must for any developer, software engineer, project manager, team lead, or systems analyst with an interest in producing better code.
+  Definite go-to guide for How Good code differs from the Bad one, the paradigm of Good code that Robert C. Martin presents is a set of rules or better habits such as how to create very descriptive names, maximum readability, error handling, etc.. this book is a must for any programmer, Software engineer, Developer.
 
 * **[The Pragmatic Programmer](#ISBN020161622X)** by Andy Hunt, Dave Thomas
 
@@ -34,12 +35,12 @@ tags: [programming, computer engineering books list, computer books list, comput
 
 * **[Coders at work](#ISBN1430219483)** by Peter Seibel
 
-  interviews of most interesting 15 computer programmers alive today in Coders at Work, offering a companion volume to Apress’s highly acclaimed best-seller Founders at Work by Jessica Livingston. As the words “at work” suggest, Peter Seibel focuses on how his interviewees tackle the day-to-day work of programming, while revealing much more, like how they became great programmers, how they recognize programming talent in others, and what kinds of problems they find most interesting.
+  A fascinating book that every Programmer will enjoy, comprises of 15 interesting of Computer Scientists / Programmers, interviewer asks about the challenges and what interested them as a beginner and how they progressed in their trade, what kinds of problems interviewees find most interesting.
 
 * **[The Mythical Man-Month](#ISBN0201835959)** by Fred Brooks
 
   A popular classic book on Software development process and Project management, Fred Brooks talks about software development myths and how they Repeat over generations. author provides facts and enlightning opinions on How to manage complex projects and insist on the idea that there's no single [Silver bullet](https://en.wikipedia.org/wiki/No_Silver_Bullet) in Software development, author has worked on IBM's OS/360 a massive operative system.
-  
+
 * **[Don't Make Me Think](#ISBN0321965515)** by Steve Krug
 
   This is absolute gem of a book about web usability from 2000 it has humourous narration which keeps reader's attention. talks about usability testing with good Illustrations and real-life Examples, explains about framework of usability. Krug's writing style is simple & easy to understand, book covers important user experience Topics.
