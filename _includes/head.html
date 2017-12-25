@@ -8,7 +8,9 @@
   <meta property="og:title" content="{{ page.title | escape }}"/>
   {% endif %}
   <meta name="google-site-verification" content="nvg5AE3_VC9LnBV0a1gdK9Sz42ys9SXrmzxUbqkCHSM" />
-  <meta property="og:description" name="description" content="{{ page.description | page.main_only_short_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{{ page.description | page.main_only_short_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:description" content="{{ page.description | page.main_only_short_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
   {% if page.tags %}
   <meta name="keywords" content="{{ page.tags | post.tags | join: ', ' }}">
   {% endif %}
